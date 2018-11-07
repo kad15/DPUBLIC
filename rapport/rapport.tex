@@ -1,0 +1,799 @@
+\documentclass[a4paper,12pt]{article}
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % ATTENTION : dans les figures le label doit être mis 
+%APRES le caption pour que le numéro de la figure lorqu'on
+%la référence soit le bon ; sinon on a le numéro du paragraphe
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+% package qui fournit \justify 
+\usepackage[document]{ragged2e}
+\usepackage{eurosym}
+
+%pifont pour les puces de formes spéciales
+\usepackage{pifont}
+\usepackage[table]{xcolor}
+\usepackage{tabu}
+% césure exemple
+% \hyphenation{an-ti-cons-ti-tu-tion-nel
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel} % If you write in French
+%\usepackage[english]{babel} % If you write in English
+\usepackage{lmodern} % Pour changer le pack de police
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{makeidx}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{stmaryrd}
+\usepackage{geometry}
+%\usepackage{graphicx}
+\usepackage{graphbox}
+\usepackage{supertabular}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\geometry{hmargin=2cm,vmargin=2cm}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{ltablex}
+\usepackage{float}
+\usepackage{url}
+
+\usepackage{chngcntr}
+\counterwithin*{footnote}{page}
+
+
+\usepackage[titletoc,toc,title,page]{appendix}
+\renewcommand{\appendixtocname}{Annexes}
+\renewcommand{\appendixpagename}{Annexes}
+
+\usepackage{standalone}
+\usepackage{ifthen}
+\usepackage{xstring}
+\usepackage{calc}
+\usepackage{pgfopts}
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,shadows,arrows}
+%\usepackage{array,ragged2e}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\makeatletter
+\renewcommand{\ALG@name}{Algorithme}
+\renewcommand{\listalgorithmname}{Table des algorithmes}
+
+\newtheorem{theo}{Définition}[section]
+\usepackage{mathtools, bm}
+\usepackage{amssymb, bm}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,       % color of internal links
+    citecolor=purple,       % color of links to bibliography
+    urlcolor=blue          % color of external links
+}
+
+\usepackage{listings}
+
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
+
+\lstset{
+  language        = php,
+  basicstyle      = \small\ttfamily,
+  keywordstyle    = \color{dkblue},
+  stringstyle     = \color{red},
+  identifierstyle = \color{dkgreen},
+  commentstyle    = \color{gray},
+  emph            =[1]{php},
+  emphstyle       =[1]\color{black},
+  emph            =[2]{if,and,or,else},
+  emphstyle       =[2]\color{dkyellow}}
+
+
+
+\usepackage{blindtext}
+\usepackage{enumitem} % pour changer les puces dans \itemize
+
+
+\date{\today}
+
+\makeindex
+\def\siecle#1{\textsc{\romannumeral #1}\textsuperscript{e}}
+\newcommand{\argmax}{\mathop{\mathrm{argmax}}\nolimits}
+\newcommand{\pgcd}{\mathop{\mathrm{pgcd}}\nolimits}
+
+\makeatletter
+\renewcommand{\pod}[1]{\allowbreak\mathchoice
+  {\if@display \mkern 18mu\else \mkern 8mu\fi (#1)}
+  {\if@display \mkern 18mu\else \mkern 8mu\fi (#1)}
+  {\mkern4mu(#1)}
+  {\mkern4mu(#1)}
+}
+
+\usepackage{wallpaper}
+%\usepackage{bsymb,b2latex}
+
+\begin{document}
+\renewcommand{\labelitemi}{\textbullet}
+% pour factoriser l'échelle des figures 
+%utilisation scale=\scaledvwa au lieu de scale = 0.3 ... 
+%\newcommand{\scaledvwa}{0.4} 
+%\newcommand{\scaledvw}{0.3}
+%\newcommand{\scalekad}{0.45}
+
+\input{page-de-couverture/couv.tex}%on créé la couverture
+
+\pagebreak
+
+\tableofcontents
+\justify
+\pagebreak
+
+%\section*{Introduction}
+%\addcontentsline{toc}{section}{Introduction}
+
+
+\section{LE DROIT}
+\subsection{Le droit et son contexte}
+
+
+
+
+
+Le droit n’existe pas :
+Systèmes différents : ex : innovation acceptée par défaut ou soumise à autorisation. 
+
+Passé et contexte socioculturel
+Issu du droit romain avec spécificité francaise, révolution française. droit égalitaire
+Droit société pauvre + strict que société riche car conséquences + importantes.
+Ex : peine de mort si brulage de récolte
+Droit société pratiquante, religieuse + strict que athée :  si le droit vient de dieux on ne peut le changer et on l’applique strictement. Il y dieu et aussi le diable. Si transgression du droit ça vient du diable : possédé du démon. Ex : on peut tuer les incurables qui le demandent.
+Dans athée, le droit vient de choix humains.
+USA : vérifier s’il n’y a pas un life time CAP
+Comparaison : 
+Comparer le droit des différents pays est intéressant.
+Vmba (Allemagne) = sarl (française) vient d’une copie du système allemand pour petites entreprises
+Qui n’ont pas besoin de pdg, de CA, etc.
+Ex : pb banque : la banque à des avocats spécialisés vs le client qui n’a rien. Mais les scandinave ont
+L’OMBUDSMAN = médiateur du crédit saisi gratuitement, connaît le type d’affaire, indépendant des deux parties. 300 \euro d’agios anormaux. Statura sur les torts de chacun. On ne va plus en justice pour passer outre l’avis du médiateur car frais inutiles. Abus de procédure. 
+Le défenseur des droits = médiateur vis-à-vis du tribunal administratif, litige avec l’état.
+Tout le monde n’a pas accès au juge, avocat donc idée médiateur bonne et comparer les droits es bueno.
+
+Ex : japon : bateau efficace, habillé chapeau eau de forme, redingotte, … copie les gens de la city.
+Le japon féodal, militariste, confucionniste pas droit. Droit japon copie droit allemand reich en japonnais et on bouche les trous avec le doit fr napoléon.
+INDE ET chine ont un pb : les terres sont collectives donc on ne peut acheter un terrain à quelqu’un.
+USA : appart acheté un apt qui a été donné en garantie à une banque = gros pb
+France : système notariat, déréglementer le notariat. Officier ministériel repr l’état ; acte autehtique.
+Acheteur de bonne fois est chez lui pas comme aux USA.
+Il faut savoir à qui appartient tout ; la chine a acheté le système du notariat et constituer un cadastre ; photocopie du sys français. 
+La Syrie antique : 1er textes struturé ; code d’amorabi.
+Nazi : pas une bonne idée d’être juif, definition du juif ? transmisson essentiellement par la mère.
+Recours près le tribunal administratif : mère et père juif mais infidèle avec HELMUT MORT EN RUSSIE. Expertise pour savoir si l’enfant est juif ou non et suspensif. En Allemagne, citoyen allemand.
+Si la grand-mère est aussi infidèle => statut demi juif, puis quart de juif, …. Réussi à tenir toute la guerre jusqu’à début 1945 ; respect du droit nazi. A subi un traitement spécial = gazé.
+Gandhi : intouchable sont des fils de dieux. Rendent impures surtout vis-à-vis des hautes castes. Mort impure et réincarnation en « moustique ». les gens des hameaux leur hombre peuvent vous rendre impure comme des lépreux. Gandi a fait évoluer le droit sur les intouchables et pb de dot des filles ; interdit de bruler la fille dont les parent n’ont pas paye la dot en 1983. 
+
+Relativisation :
+L’émergence d’un droit européen :
+
+
+\subsection{Classification des droits}
+(selon le social, le rôle et les sources)
+
+
+
+L’ordre social :
+Ex : voisin plonge ds votre piscine, pas d’eau, fauteuil roulant, attaque le fabricant piscine, responsablité sans faute, assurance rembourse, courant aux état unis, au USA, on ne paie pas l’avocat, mort hopital femme 92 ans, attaques en dommage et intérêt et prend les 2/3 ; on fait payer le solvable + dommage punitif si le condamné a eu un comportement anormal ex : fab de tabac : 300 milliard de \$ à une asso en 1ere instance. 
+En appel, juristes professionnel qui ramènent à des sommes bcp plus faible : 300 milliards avec somme tres faible ; mont santo en appel glyphosate en appel max quelques millions ; ex : mais bnp parisbas ,transac avec l’iran, 
+Panoplie de batman : ne permet pas de voler, conserver notice et lire avant la notice et garder le document ; voiture : protège parbrise.
+
+Jean phil ducourneau : billet de tac o tac, gratte 400 000€ max, 0€, rien n’apparait, va en justice, on lui propose 5000, 10000, 15000, voulait 400 000 en justice il a perdu.
+
+Variation pour le plaisir : porno avec chants sacrés, juste des référé, rapide, interdiction de diff du film. En France, ça n’a pas été accepté.
+En France, le droit est diff des USA.
+
+Droit laique décidé par l’homme
+Société collectiviste : tous les droits appart à l’état, pas de droit de propriété
+Société communautaires : Droit de la famille, de la tribu, … pas de droit individuel car apprtient à la communauté comme un doigt ou un genous d’un corps ; un genoux ne peut porter plainte contre son proriétaire ! 
+Société individualiste : c l’individu qui a des droits, interdiction d’une punition collective.
+
+Droit communiste : collectiviste, affrique : communautaire
+
+
+Le rôle du droit : 
+
+1 - Pays occidentaux utilisent le droit pour faire changer les choses : ex : homophobie délit force la société à changer avec un texte de loi.
+
+Exemple : fumer au cinéma et dans les avions puis dans les bar tabacs, restaurant ; 
+Le non fumeur a le droit pour lui.  
+Mariage gay, parité : droit sert à faire évoluer la société.
+
+2 - Ailleurs, Droit sert à imposer ce que veut l’état : exemple de la Chine, lettré de l’empereur dit le bon comportement, le repr du parti, droit defini par l’état et protège l’état contre les contestations, on fait ça.
+
+Faire connaitre la volonté de l’état par le membre du paprti communiste ou le religieux 
+
+
+Les sources du droit :
+
+La coutume : 
+
+Droit commercial et ses coutumes : paraires delivré par des CCI 1000 max en liquide mais exception vendeur de viande paie tout en liquide.
+UK : en angleterre soumis à la constitution, monarchie constitutionnelle, coutume, mais conil y stitution britannique basée sur la coutume ; droit immobile droit des sages et des anciens, droit repose sur la qu.alité des anciens ; vieux cons => système marche mal.
+1- Système de droit coutumier : pouvoir des anciens
+2- Système avec lois : pouvoir des politiques, trop de lois, pas juriste, non abrogation de lois ancienne en contradiction potentielle, abrogation chronophage, mais au bout du compte ; il y a des lois qui ne sont pas appliquées.
+Ex : des bateaux pétrole à pavillon francais : pétrole brutes sur pavillon étranger à roterdam, total importaient ses propres produits, achat de produits importé, perte de l’industrie du raffinnage car loi avec pétrole brute et pas « produits pétroliers».
+Sous pasqua, catég de gens expulsables sans intervention du juge et cat. Non expulsables. Loi mal écrite, personne apaprt aux deux ; juge se déclare incompétents et les relachent.
+Loi droit de l’actualité et des politique.
+La loi : totalement politique
+
+La coutume : constitution coutumiere en angleterre.
+
+La jurisprudence
+
+Jurisprudence : argumenter sur des decisions prise sur des affaires comparables. Ça se fait bcp chez les anglo saxon. Ex : prof eco/enac recherche de décision robert/supaero, …
+Litige : fouille d’archives, bcp de monde et de surface, immobilier chere, avocats chers.
+C’est donc un droit qui coûte très cher. Vous avez le fric vous avez gagné.
+
+
+Si une jurisprudence n’est pas respectée on dit que le jugement n’a pas fait jusrisprudence
+
+Le contrôle constitutionnel :
+
+Contrôle const. freine les évolutions : cours supreme (usa), cours const de karlsruhe(Allemagne) nommé à vie ! en poste pendant 30-40 ans – on peut interdire la peine de mort, …. Oriente ce qui peut être fait en droit pendant 30 ans.
+Si la cours passe à droite pendant longtemps elle le restera et les lois droitistes passeront plus facilement.
+
+
+
+
+\subsection{Les systèmes de droit}
+
+Droit occidental
+
+Individualisme : ce sont les gens qui ont des droits
+
+
+Libéralisme : en lang juridique ce n’est pas un terme économique
+Droit d’être protégé contre l’état, existence d’un tribunal pour accuser l’état
+
+
+Independance du judiciaire par rapport au pouvoir politique et religieux :
+Un tribunal iranien à s’opposer à une autorité religieuse.
+
+Indépendance du judiciaire faible en France jusqu’à peu.
+On téléphonait au juge !  pas de liberté de la presse sous de gaulle.
+
+
+Droit romaniste : lois expliquent comment traiter une affaire.
+C’est une grammaire ou un théoreme. Régle abstraite appliquées techniquement.
+La « common law » : innocent avec un dossier mauvais mais personne ne croira à l’innocence ; on négocie la non préméditation ou l’homicide involontaire avec imprudence aggravée sinon procès. Si on plaide non coupable, on va au procès, on ne sait pas ce que l’accusation possède avant mais après l’accusation est obligé de fournir le dossier complet. 
+
+Donc la common law bcp de droit avec des loi non écrite, bcp de jurisprudence, moins pour les romanistes
+
+Les droits nordiques :  un peu des deux
+
+
+
+Droit communiste : russie, chine
+Dans les deux cas : état fort, codification de ce que veux le pouvoir. Droit pour détruire l’individualisme. Individualisme collectif e.g. entreprise ou exploitation agricole vente plus cher. On ne cherche pas instaurer une dictature , Role actuel : role de maintien de la dictature. 
+
+
+
+
+
+Droit Asie/Afrique
+
+Droit coutumier africains
+Droit coutumier, principe de base la solidarité.
+Pb en matière de création d’entreprise et d’économie car difficile de vendre
+Avec profit, on ne peut pas en vivre car vente à prix coutant. Partir en ville n’est pas une solution.
+Droit coutumier a ses limites => droits coutumier + droit qui traite les aspect non traiter par la coutume ; droit des anciens colon ou droit communiste. Si affaire inter ethnique, le droits moderne. 
+
+
+Droit musulman : droit religieux, immobile, droit casuistique interprétation de cas concrets, si le prophète a dit « l’assoiffé peut boire à la source de son voisin » ; branchement pirate à la source de l’ENAC, au réseau internet. Chacun le traduit à sa manière. Extension du droit ; ne s’applique pas au non musulman. 
+
+AU JAPON, les entreprises s’entendent, je construit l’aéroport, et toi l’autoroute…
+Aux USA c’est interdit. 
+Des droits ont tendance à s’étendre ailleurs.  Rhomeny, fatua contre rushdi, si qq le tue il ne pourra pas être condamné.
+
+
+Droit hindou : se conformer à sa place dans la société. La caste n’est pas pas une cat. Socio professionnelle. la caste est innée. Caste chaque sous caste associée un métier. On ne peut pas changer de métier. C’est un monopole. Ex : boulanger, boucher, forgeron, concours fonc pub bac+5 passe concours bac. Tenir sa place. Mauvais comportement dans une autre vie. Si bon forgeron, réincarnation en boucher, etc ne ralez de rien ; situation consequence vie passée. Il  a les sicks et les musulmans si interethnique, droit britannique.
+
+
+Droits confucéens : exigence de ne pas troubler l’autorité du monde. L’envoyé de l’état ou le partie communiste.
+Japon : cadre féodal, le seigneur, cadre militariste, confu : evite le trouble soumet toi, boudiste : accepte ton sort.
+
+Japon : Droit allemand au japon, en 45 droit américain appliqé uniquement au droits des affaires, il ne l’applique pas, pays ajuridique, on ne porte jamais plainte, pareil que « cafter » à tort ou à raison. On arrange les affaires entre soit. Loyer pas payer ; embauche des hurleurs pour perte de la face du mauvais payeurs. 
+
+AG entreprise : actionnaires mal traités, si actionnaire se plaint empeche les gens de parler de force. Souck dans l’assemblée générale. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{DROIT ADMINISTRATIF}
+
+
+\subsection{Nature}
+
+
+
+
+
+Droit privé : gains importants 
+Droit des affaires, droit de la famille
+Charge de notaire = plaque de taxi
+Notaire qui travaille chez un notaire proprio de la charge = simple ingé du droit
+
+Droit public : \$
+1 – droit constitutionnel :
+Constitutionaliste de bfm
+
+2 – droit Administratif
+Moins prestigieux : relation avec les adminsitrés
+Juge administratif, …. : pas bcp d’argent à se faire
+
+France : Etat unitaire depuis env 1000 ans
+USA : pas d’état unitaire, etat fédéral relativement faible. 
+Etat : prison à vie pour 3 joints, peine de mort ou pas.
+
+France : état décentralisé, Monaco n’a pas besoin de décentraliser.
+Région ou commune : zone autonome.
+L’emplyer municipal n’obeit qu’au maire meme si le maire doit suivre le prefet.
+Etat déconcentré : le département, Le prefet c’est l’état central. Premier ministre du département, soumis à l’état.
+
+Dans un état de droit, le gouvernement doit respecter les textes.
+
+3 – extension du droit administratif : le code de la secu sociale. Mais la secu n’est pas l’état.
+
+DROIT ADMINISTRATIF ET ETAT DE DROIT
+
+
+L’état se soumet au droit, louis 14, Adolphe NON
+Contrôle avec tribunal
+Aboutissement de la démocratie ; louis 14 révoque l’édit de Nantes, les protestants se barrent.
+
+Aux USA, et UK pas droit administratif.
+
+L’état a un droit spécial, le droit 
+
+Les tribunaux admin se sont mieux comportés et maintenu un état de droit plus strict
+Malgré l’occupation allemande. Les trib admin ont tjrs maintenus une certaine équité
+Dans un régime dictatorial. Droit qui n’est pas abusivement favorable à l’Etat.
+
+
+
+\subsection{Contexte}
+\subsection{Les prérogatives de l'administration}
+
+
+La décision exécutoire : privilège du préalable, exécution d'office
+
+si décision de l'admin, elle s'applique même s'il y a erreur
+
+
+
+
+- les pouvoirs : réglementaire, police,  IMPLICITE, LES ORDRES PROFESSIONNELS
+
+un reglement est une sous loi : faire des textes dans des domaines moins important
+que la loi qui doit passer par le parlement, etc.
+
+
+le recteur, le maire, préfet, etc ont des pouvoirs réglementaires.
+les ministres n'ont pas de pouvoir reglementaire ! ils écrivent des circulaires ministérielles.
+les circulaires sont elles valables après le départ du ministre.
+
+
+- les dérogations au droit commun
+
+POLICE : interdire une manif culturelle, film : liberté mais pour raisons d'ordre public, recours non suspensif.
+mesure doit cesser si les raisons n'existent plus.  (couvre feu, ...). Le pouvoir de police ne crée pas de droit.
+on empêche la diff du film et on retire la police ; pouvoir maire, préfet, interrompt, prend sa décision qd il veut.
+
+
+LE POUVOIR IMPLICITE : chef de service qui a sous son autorité des subordonnés. décisions qui s'applique, autorité hiérarchique :alcoolique, le pouvoir hiérarchique est admis par la justice mais sanction éventuelles a posteriori.
+
+LES ORDRES PROFESSIONNELS :
+deux panneaux indicateur de cabinet médical, interdiction de faire de la pub pour les médecins.
+possibilité d'éditer des règles et sanction : interdiction d'exercer pour les médecins.
+
+révocation des IENAC 16 par les ienac 93.
+
+Ordres créés au cours de l'été 1940, 16 aout 40 création de l'ordre des médecin : interdiction de medecins juifs,
+les avocats.
+
+contrat administratif : marché de 4 ans avec contrat de droits public qui peut modifier ou interrompre le contrat avant la date pour raisons public mais réparation, ou sanction pas de cravate verte, ou modification des cours à donner, ou  ( contrat de droit privé ne peut être modfifier ). le fonc peut être sanctionné alors que les fautes ne sont pas listées comme ds un contrat de droit privé. l'admin peut être en faute, exemple paiement des prestation aux entreprise privées.
+
+
+L'admin doit passer par un appel d'offre, ne choisi pas son co-contractant sauf en calibrant le marché.
+concurrence pour contrat ENAC de Bruner ; juriste moldave. la croix du midi diff des appels d'offres confidentiel, mettre
+des régles, cheveux blancs ;-)
+mais si marché important, l'admin est tenu de ne pas pouvoir choisir son co-contractant.
+
+si enac décde de faire des ienac, arret contrat et indemnité
+
+régime des biens privées ... et publics :
+
+expropriation : raisons d'interet public, expro valide juste et préalable à l'indemnisation, qu'après indeminsation.
+niveau indemnisation correct mais être payé avant.
+
+en 1982, nationalisation = achat obligatoire d'actions donc indemnisations.
+
+Procédure de l'alignement : élargir une voie, hausmanienne. non autorisé à réparer l'immeuble ; on peut expoprier.
+alignement plus pervers ; tu peux rester chez toi mais vie dure et revente difficile. alignement par rapport au routes, rivières, domaines public par nature ; bord de seine à paris; la zone de littoral : entre marée haute et basse zone public. on ne peut privatiser des plages.
+
+les txt européens parlent de l'élargissement du domaine public jusqu'à 400m.
+
+
+zone d'aménagement différé (ZAD)
+
+gare TGV, métro, word trade center, musée du louvre, terrain à batir de base. 
+j'ai un terrain avec mes vaches. terrain passe en ZAD. interdit de vendre et rachat au prix du terrain 
+agricole. terre agricole.  labège = agricole. trois brasseurs, terrain prend  de la valeur.
+si passe en ZAD on ne vous rachète pas au prix réel.
+
+
+maison entre autoroute et TGV mais passe pas sur votre terrain ; respons sans faute, indemnise les voisins du préjudice.
+
+chantier public ; on va mettre des algeco < 5ans renouvellables., indemnisés.
+ 
+LES POUVOIRS JURIDIQUES DE L4ADMIN SONT EXHORBITANT i.e. sans sommune mesure avec le droit commun.
+
+les catédral ap à l'état, on ne peut saisir tout ce qui appartient à l'état. téléphone noir en bakélite PTT; insaisissable. le pont de l'île de Rée ; pont illégal inauguré evient propriété de l'état inaliénable.
+
+
+Eric Worth a réussi à faire vendre une parcel ap à l'état de foret de chantilly ; vente qd même ; prix faible.
+ds certain cas vente possible si échange que d'autre.
+golbalement l'état ne vend pas : incessibles et insaisissable.
+
+exception : immeuble de bureau.
+
+ 
+
+
+\subsection{Champ d'application}
+
+
+SPA : service public administratif : ENAC, ... terrain ap à l'enac mais non privé, personalité morale, existence juridique.  
+
+interet des établissement publics: possibilité de recevoir des dons : rd etudiant 200 m², don à l'hopital etc
+on ne peut donner de l'argent pour lui dire de faire ça.
+
+- independance par rapport au pouvoir central : supaero, année de césure obligatoire mais non légal !!
+ex : opera de paris programme ce qu'il veut donc indep de gestion.
+
+on fait participer les administré à la gestion  : CCI, blagnac : parking rentable, cci etab public, 
+fonctionnaires sous statut, argent public, comptable sont publiques, les élus dirigent les élus.
+les élus non foncélus par des non fonc. commercant (activité : banque, taxi, toutes les entreprises sont des commercants) le mileu des affaires élisent les dirigeants non fonc et gèrent des employé ublic statutaires.
+
+fonc ou équivalent : 
+
+ex : sang contaminé, EP non controlé   
+
+mission ne pouvant relever du secteur privé
+
+REGIE / ACTIVITE EXPLOITEE EN REGIE OU EXPLOITEE PAR UNE REGIE;
+
+EN REGIE: entité public fait ça avec ses propres moyens.
+enterrer resp de la commune : sous traitance ou en régie : prendre le kangou cercueil, employé municipal,
+kangou municipal ; ses propores moyens exploit e nrégie donc tribunal adminsitratif.
+
+ex : transport municipal, tiseo exploit les bus lineo géré par toulouse, bus et condcuteur toulouse sans création d'entité public. tiseo était une régie droit privé. mairie reprend tiseo, la régie disparait.
+l'eau veolia ou suez prive ou en régie géré par la mairie.
+
+
+
+ratp : régie des transport parisien ; employé par la ratp, bulletin de paie ratp pas mairie de paris donc droit privé.
+
+régie des usines renault ap totalement à l'état ; embauché par renault.
+régie publicitaire de tf1, une régie est un entité 
+
+SPIC service public industriel et commercial
+
+ex : un aéroport, 
+
+TRIBUNAL DES CONFLITS : tribu judiciaire, tribu administratif
+
+
+
+LES ORGANISMES AUTONOMES :
+ex : la sécurité social en monopole, afiliation obligatoire, agent assimilé fonc mais non public donc privée, dirigée par des commissions paritaires syndicat/patronat mais ne sont pas proprio de la sécu.
+
+
+SPIC : relève du droit privé :
+
+- les concessions : 
+routes dommaines public;
+terrain public, autoroute construites et exploitée par vinci, etc. rémunération péage après 30 ans de concession.
+on cesse en principe le péage devrait cesser.
+
+pompes funèbre, aéroport, l'eau
+
+
+- divers serv publics géres par des organismes privé ou admnistration:
+
+poste devenue une entité privée soumis au droit privé mais postier fonctionnaire,
+poste deficitaire, mais banque postale très rentable. si pas de service postal.
+etab rpivé mais ous controle d'état.
+
+création de france telecom , on pet dire que c une SA avec actions ap entierement à l'état, puis vente partielle de
+5\%, puis 49\%, puis 33\% pour garder minorité de blocage, privatisation en douceur.
+
+
+- EPICS et entreprises nationales:
+
+entreprise : sncf, edf droit privé ap à l'état. litige devant le tribunal judiciaire.
+
+office hlm privé et public ; il existe des apartements ds le même immeuble dépendant de du piblic et d'autres des hlm privés donc compliqué
+
+minier privé mais eau public.
+
+centre des congres, Beaubourd 
+
+
+
+
+\subsection{Le contrôle}
+
+principe de légalité et champ d'application
+- soumission aux textes
+
+-soumission au controle judiciaire
+
+sauf constitution, lois, actes de gouvernement.
+
+- non soumis au ctrl judiciaire : la constitution contrat social population et sys. politique
+aucun ctrl sur la constitution.
+
+- le conseil d'état > tribunal adminsitratif ne peuvent toucher aux lois.
+
+
+Navigation en haute mer est libre, chirac traité arrêt essais nucléaire des que l'on termine les 5 derniers utiles.
+zone en haute mer mais interdit par "acte de gouvernement".
+
+article 16 : si le pdt de la république pres de l'ass natio, sénat, le 1er ministre et s'adresse au peuple : dictature temporaire, putsch d'Alger de gaulle.
+
+
+- ordonnances ayant force de loi : dire à l'assemblée autorise décision non soumises au vote.
+permet au député de ne pas voter des lois difficiles sur le plan politique en vue d'une ré-élection.
+ex : création de la sécu.
+
+promulguer des ordonnances et appliquées, on peut les attaquer au tribunal administratif.
+
+
+le juge ne peut pas imposer qqch à l'administration, pas de pouvoir d'injonction. pas de soumission au juge.
+juge ne peut pas autoriser. si l'admin ne répond pas le juge ne peut autoriser à la place de l'admin. constat et indeminsation seulement. 
+
+on ne peut pas saisir une admin ou mettre en prison. en droit privé, les entreprise peuvent être condamnée à la prison
+pas les adminsitration.  
+
+
+- l'organsiation du controle : les tribunaux admminstratifs, le conseil d'état.
+
+env 40 trib. admin, on délocalise l'appel.
+
+pour le Civil, la cours de cassation vérifie que le droit respecté : juge partial droit non respecté, droit de la défense non respectée.
+si c le cas on casse le jugment.
+
+pour le public, c'est le Conseil d'état, peu critiqué, constiuté d'Enarques.
+
+on peut aller au tribu admin sans avocats ( devant les tribus civils non autorisé), simple, procédure inquisitoriale ie
+le juge étudie les deux dossiers. pas d'audience, pas d'avocats. en général juge admin sur pièce. cours des compte, contestation, => conseil d'état. idem si constation décision conseil de l'ordre des médecins.
+
+directement conseil d'état : décret presid ou prefet, circulaire ministerielle, constestation régularité election,
+ex : hamas et lancement chaine de TV en france : direct au conseil d'état qui a validé la décision de refuser la TV.
+
+on peut attaquer le silence au bout de 2 à 4 mois ; qd l'admin ne répond pas ça vaut accord au bout de 2 mois.
+
+
+
+
+\subsection{Le recours}
+
+
+Exces de pouvoir : le prefet autorise la circul d'un train nucléaire ds le département. ce n'est pas de son ressort ; il a excéder ses pouvoir. idem : autorise mise en culture OGM. interet à agir = interet froissé, si on cultive un ogm, un reverain ogm, militant antiogm donc pas d'interet froissé donc pas de raison d'aller en justice.
+
+
+- détournement de pouvoir : greve du zele policier, punition d'un seul policier, promotion, mutation pour m'éloigner.
+vigipirate, le maire : interdiction stationnement des voitures en surface, il vient de faire creuser un un parking souterrain avec retour sur invesitissement. abus de droit pour un particulier : hospitalet andorre cigarettes 60 fois par jours = notion de détournement de pouvoir.
+
+\subsection{Responsabilité de l'administration}
+
+agent mal conduit il devait les réparations s'ils fallait en donner.
+centre national de trasnfusion sanguine CNTS: SIDA, lots contaminés, DIRIGEANT PAYES avec des inétessement, contaminé les hémophiles, surcontaminé mais plus de risque. mais il n'y aurait jamais d'indeminsation. ouverture d'un fonds pas de limite. mais on jour la montre, on va en cassation ; idem pour l'amiante.
+
+aujourd'hui, l'admin est responsable des actes des agents ;  
+
+cas papon : complicité de crime contre l'humanité : amende pour 4 millions de francs.
+vichy ce n'était pas la france.
+il était secr général de préfecture avant la guerre, pdt la guerre et après la guerre.
+l'amende n'a jamais payé l'amende.
+
+
+
+référé : jugement rapide pas un recours classique mais un recours en référé avec le risque que le recours peut être rejeté. n'aller en référé que si raison objective d'aller vite. arrêt de cette décision.
+l'intéret public : risque de trouble, prestige france, aller en référé rapide 1 sem max 2:
+
+référé  conservatoire : fac bloquées à toulouse, locaux mis à dispo des étudiants qui préparent les exam.
+oblige à trouver des salles pour préparer.
+
+le référé liberté : masque à gaz, flic autour de l'enac, enac en quarantaine.atteinte majeure au liberté publiques ; 
+reféré liberté en 1 jour. on peut obtenir l'annulation d'une décision en 1 jour et l'état se soumet au juge.
+
+
+\section{LE STATUT DES FONCTIONNAIRES}
+\subsection{La fonction publique}
+
+- nature
+- diversité
+
+
+FONCTION publique d'état, territoriale et hospitalière
+
+le budget de l'état, projet de loi de finance evt majeures, trsè controlé.
+
+tous les gens qui travaille pour l'état ne sont pas fonctionnaire.
+on est fonctionnaire ou on ne l'est pas  
+être élu président ne fait pas de vous un fonctionnaire.
+
+
+- effectifs : combien de fonctionnaires sont employés pas vraiment connus, connait les emploi budgétaire, plusieurs emploi budegétaire peuvent servir des temps partiels.
+
+
+\paragraph{droit applicable}
+catégorie A B C 
+cat D a disparue mais gens non qualifiés ; on ne sait plus utiliser les "idiots du village". polémique re-création
+d'une cat D.
+les moins qualifiés vaut mieux être fonc.
+
+l'encadr sup est plutot moins bien payé.
+le fonc de base touche plus mais plus diplomé.
+
+employé de la fonc public.
+
+- situation non contractuelle : pas de contrat, on n'a pas signé de contrat, 
+on ne peut pas négocier les conditions, les adapter.
+les contractuels dans la police ou autres de droits public (tribunal admin) mais non fonctionnaire
+sauf contrat de 3 ans ou 5 ans. une bonne partie de l'armée est là pour 5 ans ou intégré à l'armée d'active
+et devient fonc.
+
+
+- nomination
+
+
+- titularisation
+tant qu'on n'est pas titularisé, on n'est pas fonc (sup de co = TBS)
+l'admin n'a pas à se justifier de ne pas titularisé, evt une indeminité, réparation d'un préjudice sans faute,
+mais tu as été payé donc tu n'a rien à dire ; auxiliaire dans la gendarmerie et ledu nationales ; même boulot.
+périodiquement, intégré à la fonc publique mais n'ont pas passé de concours et pas d'exigence de mobilité, affecté
+chez eux.
+
+
+- très haut fonctionnaire, nommé non fonctionnaire, des prefets ne sont pas fonc, recteur d'académie, 
+sommet de l'état décide que telle personne sera là.
+nomination du consul de france à los angeles
+
+- emploi permanent
+militaire à mi-temps pas possible, embauché nécessairement à plein temps mais possibilité temps aprtiel après sous condition de nécessité de service.
+
+
+
+- soumission au statut
+
+
+
+
+
+\subsection{Le statut des fonctionnaires}
+réglements qui réglent les détails de la carrières.
+\subsection{la situation légale des fonctionnaires}
+
+- situation statutaire et réglementaire
+
+- système de la carrière:
+ne pas avoir à démissionner pour passer d'un poste à un autre, ds le public progression sans démission.
+
+égalité des fonc d'un même corps.
+
+une décision d'un supérieur hiérarchique n'est pas modifiable par le juge.
+
+
+- absence de droit au maintien à disposition
+
+
+\subsection{Recrutement}
+
+- nationalité
+- jouissance des droits civiques
+- position régulière vis à vis du serv national
+on ne peut pas être déserteur ; si pas fait la journée d'appel à la défense.
+
+- aptitude physique:
+indemne de toute infection
+
+- discrimination prohibée:
+politique sauf si droit de réserve non respecté, religieuse ou laique, homme/femme,
+évéques : sous prefet mais interdcition des femmes avec le vatican, les pretre sont pourtant des
+fonc.
+
+
+- concours
+concours interne, externe, en france pas de droit à concourir.
+au usa et en angleterre on peut s'inscrire à tout concours.
+
+- nomination et titularisation.
+
+justice, police armée, (légionnaires non français)
+être français ou européens.
+droit civique : droit être élu, ou de voter.
+
+si on perd ses droits civiques on n'est plus fonc.
+à la fin de la période l'admin peut vous reprendre mais sans obligation.
+
+\subsection{Carrière}
+\subsection{Obligation des fonctionnaires}
+\subsection{Sanction des manquements}
+\subsection{Droit du fonctionnaire}
+\subsection{Fin de carrière}
+
+
+%\pagebreak
+%\input{intro_conclusion/conclusion}
+
+%\pagebreak
+%\listoffigures
+%\pagebreak
+%\listoftables
+%\newpage
+%\appendix
+%\include{annexes/annexe_A}
+%\include{annexes/annexe_B}
+
+\newpage
+\nocite{*}  %affiche toutes les entrées du bib même celles qui ne sont pas citées.
+% cf.    http://www.tuteurs.ens.fr/logiciels/latex/bibtex.html
+% compilation en TROIS PHASE  bibtex traite un fichier *.aux mais bibtex mon_fichier comme bibtex mon_fichier.aux sont acceptés 
+% latex mon_fichier.tex
+% bibtex mon_fichier
+% latex mon_fichier.tex
+
+
+% \renewcommand{\bibname}{Toto}
+% ou
+%\renewcommand{\refname}{Bibliographie}
+% dans le préambule.
+%\bibliographystyle{alpha}
+%\bibliography{references}
+%\input{page-de-couverture/page_blanche}
+%\input{page-de-couverture/quatrieme-de-couv}
+\end{document}
