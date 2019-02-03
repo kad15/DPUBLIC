@@ -4,6 +4,9 @@
 # docx
 ~*
 
+# audio
+*.m4a
+
 # latex
 
 *.aux
